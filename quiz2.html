@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #444;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        #feedback {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .wrong {
+            color: red;
+        }
+
+        #score {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Quiz Topic 2</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="quiz1.html">quiz 1</a>
+        <a href="quiz2.html">quiz 2</a>
+        <a href="quiz3.html">quiz 3</a>
+        <a href="quiz4.html">quiz 4</a>
+        <a href="quiz5.html">quiz 5</a>
+    </nav>
+
+    <main>
+
+        <h2>Question 1: What is the significance of the term "keyword" in C++ programming?</h2>
+
+        <form id="quizForm1">
+            <label>
+                <input type="radio" name="answer1" value="a"> a) Keywords are user-defined names for variables and functions.
+            </label>
+            <label>
+                <input type="radio" name="answer1" value="b"> b)  Keywords are reserved words with special meanings, and they cannot be used as identifiers
+            </label>
+            <label>
+                <input type="radio" name="answer1" value="c"> c) Keywords are used to define constants and literals in a C++ program.
+            </label>
+            <label>
+                <input type="radio" name="answer1" value="d"> d)  Keywords are comments that provide additional information about the code.
+            </label>
+        </form>
+
+        <h2>Question 2: Which of the following is a correct variable declaration in C++ for storing the average temperature?</h2>
+
+        <form id="quizForm2">
+            <label>
+                <input type="radio" name="answer2" value="a"> a) averageTemp = 25.5;
+            </label>
+            <label>
+                <input type="radio" name="answer2" value="b"> b) int averageTemp = 25.5;
+            </label>
+            <label>
+                <input type="radio" name="answer2" value="c"> c) float averageTemp = 25.5;
+            </label>
+            <label>
+                <input type="radio" name="answer2" value="d"> d) char averageTemp = "25.5";
+            </label>
+        </form>
+
+        <h2>Question 3: What is a characteristic of local variables in C++?</h2>
+
+        <form id="quizForm3">
+            <label>
+                <input type="radio" name="answer3" value="a"> a)  They have global scope.
+            </label>
+            <label>
+                <input type="radio" name="answer3" value="b"> b)  They are accessible from any function in the program.
+            </label>
+            <label>
+                <input type="radio" name="answer3" value="c"> c)  They are declared within a function or a block and have limited scope.
+            </label>
+            <label>
+                <input type="radio" name="answer3" value="d"> d) They must be initialized with a value when declared.
+            </label>
+        </form>
+
+        <h2>Question 4:What is the primary disadvantage of using global variables in C++?</h2>
+
+        <form id="quizForm4">
+            <label>
+                <input type="radio" name="answer4" value="a"> a) They cannot be modified.
+            </label>
+            <label>
+                <input type="radio" name="answer4" value="b"> b) They have limited scope.
+            </label>
+            <label>
+                <input type="radio" name="answer4" value="c"> c) They can be accessed by any part of the program, leading to potential issues.
+            </label>
+            <label>
+                <input type="radio" name="answer4" value="d"> d) They are slower than local variables.
+            </label>
+        </form>
+
+        <h2>Question 5: Which operator is used for logical AND in C++?</h2>
+
+        <form id="quizForm5">
+            <label>
+                <input type="radio" name="answer5" value="a"> a) &&
+            </label>
+            <label>
+                <input type="radio" name="answer5" value="b"> b) ||
+            </label>
+            <label>
+                <input type="radio" name="answer5" value="c"> c) &
+            </label>
+            <label>
+                <input type="radio" name="answer5" value="d"> d) |
+            </label>
+        </form>
+
+        <h2>What is the purpose of the modulus operator % in C++?</h2>
+
+        <form id="quizForm6">
+            <label>
+                <input type="radio" name="answer6" value="a"> a) Exponentiation
+            </label>
+            <label>
+                <input type="radio" name="answer6" value="b"> b) Division remainder
+            </label>
+            <label>
+                <input type="radio" name="answer6" value="c"> c) Logical AND
+            </label>
+            <label>
+                <input type="radio" name="answer6" value="d"> d) Bitwise NOT
+            </label>
+        </form>
+
+        <h2>Question 7: What is the result of the following C++ expression? if given int x = 5, y = 3, z = 7</h2>
+        <h2>result = (x > y) && (z < y);</h2>
+        <form id="quizForm7">
+            <label>
+                <input type="radio" name="answer7" value="a"> a) true
+            </label>
+            <label>
+                <input type="radio" name="answer7" value="b"> b) false
+            </label>
+            <label>
+                <input type="radio" name="answer7" value="c"> c) Compiler Error
+            </label>
+            <label>
+                <input type="radio" name="answer7" value="d"> d) Undefined
+            </label>
+        </form>
+
+        <h2>Question 8: What is the outcome of the expression (x < y) && (z > x) || (y > z)? If x = 10, y = 15, and z = 12, </h2>
+
+        <form id="quizForm8">
+            <label>
+                <input type="radio" name="answer8" value="a"> a) true
+            </label>
+            <label>
+                <input type="radio" name="answer8" value="b"> b) false
+            </label>
+            <label>
+                <input type="radio" name="answer8" value="c"> c) Compiler Error
+            </label>
+            <label>
+                <input type="radio" name="answer8" value="d"> d) Undefined 
+            </label>
+        </form>
+
+        <h2>Question 9: What is the value of the variable result after evaluating this expression?</h2>
+        <h2>int x = 10, y = 5, z = 3;</h2>
+        <h2>bool result = (x > y) && (z * y < x) || (x % z == 0);</h2>
+
+        <form id="quizForm9">
+            <label>
+                <input type="radio" name="answer9" value="a"> a) true
+            </label>
+            <label>
+                <input type="radio" name="answer9" value="b"> b) false
+            </label>
+            <label>
+                <input type="radio" name="answer9" value="c"> c) Compiler Error
+            </label>
+            <label>
+                <input type="radio" name="answer9" value="d"> d) Undefined
+            </label>
+        </form>
+
+        <h2>Question 10: Given the C++ expression: int x = 12, y = 5, z = 3;</h2>
+        <h2>int result = x / y + z * x - y;</h2>
+        <h2>What is the value of the variable result?</h2>
+
+        <form id="quizForm10">
+            <label>
+                <input type="radio" name="answer10" value="a"> a) 33
+            </label>
+            <label>
+                <input type="radio" name="answer10" value="b"> b) 15
+            </label>
+            <label>
+                <input type="radio" name="answer10" value="c"> c) 18
+            </label>
+            <label>
+                <input type="radio" name="answer10" value="d"> d) 20
+            </label>
+
+            <button type="button" onclick="checkAnswers()">Submit Answers</button>
+
+            <div id="feedback"></div>
+            <div id="score"></div>
+        </form>
+
+    </main>
+
+    <script>
+        function checkAnswers() {
+            var selectedAnswer1 = document.querySelector('input[name="answer1"]:checked');
+            var selectedAnswer2 = document.querySelector('input[name="answer2"]:checked');
+            var selectedAnswer3 = document.querySelector('input[name="answer3"]:checked');
+            var selectedAnswer4 = document.querySelector('input[name="answer4"]:checked');
+            var selectedAnswer5 = document.querySelector('input[name="answer5"]:checked');
+            var selectedAnswer6 = document.querySelector('input[name="answer6"]:checked');
+            var selectedAnswer7 = document.querySelector('input[name="answer7"]:checked');
+            var selectedAnswer8 = document.querySelector('input[name="answer8"]:checked');
+            var selectedAnswer9 = document.querySelector('input[name="answer9"]:checked');
+            var selectedAnswer10 = document.querySelector('input[name="answer10"]:checked');
+            var feedback = document.getElementById('feedback');
+            var scoreDisplay = document.getElementById('score');
+
+            if (selectedAnswer1 && selectedAnswer2 && selectedAnswer3 && selectedAnswer4 && selectedAnswer5 
+            && selectedAnswer6 && selectedAnswer7 && selectedAnswer8 && selectedAnswer9 && selectedAnswer10) {
+                var correctAnswer1 = 'b';
+                var correctAnswer2 = 'c';
+                var correctAnswer3 = 'c';
+                var correctAnswer4 = 'c';
+                var correctAnswer5 = 'a';
+                var correctAnswer6 = 'b';
+                var correctAnswer7 = 'b';
+                var correctAnswer8 = 'a';
+                var correctAnswer9 = 'b';
+                var correctAnswer10 = 'a';
+
+                var isCorrect1 = selectedAnswer1.value === correctAnswer1;
+                var isCorrect2 = selectedAnswer2.value === correctAnswer2;
+                var isCorrect3 = selectedAnswer3.value === correctAnswer3;
+                var isCorrect4 = selectedAnswer4.value === correctAnswer4;
+                var isCorrect5 = selectedAnswer5.value === correctAnswer5;
+                var isCorrect6 = selectedAnswer6.value === correctAnswer6;
+                var isCorrect7 = selectedAnswer7.value === correctAnswer7;
+                var isCorrect8 = selectedAnswer8.value === correctAnswer8;
+                var isCorrect9 = selectedAnswer9.value === correctAnswer9;
+                var isCorrect10 = selectedAnswer10.value === correctAnswer10;
+
+                var totalCorrect = (isCorrect1 ? 1 : 0) + (isCorrect2 ? 1 : 0)+ (isCorrect3 ? 1 : 0)+ (isCorrect4 ? 1 : 0)+ (isCorrect5 ? 1 : 0)+ (isCorrect6 ? 1 : 0)+ (isCorrect7? 1 : 0)+ (isCorrect8 ? 1 : 0)+ (isCorrect9 ? 1 : 0)+ (isCorrect10 ? 1 : 0);
+                
+                feedback.innerHTML = "Your answers: <br>";
+                feedback.innerHTML += "1. " + (isCorrect1 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "2. " + (isCorrect2 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "3. " + (isCorrect3 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "4. " + (isCorrect4 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "5. " + (isCorrect5 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "6. " + (isCorrect6 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "7. " + (isCorrect7 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "8. " + (isCorrect8 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "9. " + (isCorrect9 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>") + "<br>";
+                feedback.innerHTML += "10. " + (isCorrect10 ? "<span class='correct'>Correct</span>" : "<span class='wrong'>Wrong</span>");
+
+                scoreDisplay.innerHTML = "Total Correct Answers: " + totalCorrect;
+            } else {
+                feedback.innerHTML = "Please answer all questions.";
+                scoreDisplay.innerHTML = "";
+            }
+        }
+    </script>
+
+</body>
+</html>

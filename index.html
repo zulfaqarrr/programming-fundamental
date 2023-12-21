@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header h1:hover {
+            color: #1f6692; /* Darker blue on hover for the header title */
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #444;
+            transform: scale(1.1);
+        }
+
+        /* Add a subtle animation to the navigation bar */
+        @keyframes subtleAnimation {
+            0% {
+        transform: translateY(-2px);
+        }
+            50% {
+        transform: translateY(2px);
+         }
+            100% {
+        transform: translateY(-2px);
+        }
+        }
+
+        nav:hover {
+            animation: subtleAnimation 1s infinite;
+        }
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            color: #3498db; /* Blue color for headings */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DFC20113 PROGRAMMING FUNDAMENTALS </h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Settings</a>
+    </nav>
+
+     <div class="container">
+
+        <a href="notes.html" class="card">
+            <img src="notes-icon.png" alt="Notes Icon">
+            <h2>Notes</h2>
+            <p>Explore comprehensive notes for your studies.</p>
+        </a>
+
+        <a href="#" class="card">
+            <img src="videos-icon.png" alt="Videos Icon">
+            <h2>Videos</h2>
+            <p>Watch educational videos to enhance your learning.</p>
+        </a>
+
+        <a href="quiz.html" class="card">
+            <img src="quiz-icon.png" alt="Quiz Icon">
+            <h2>Quiz</h2>
+            <p>Challenge yourself with interactive quizzes.</p>
+        </a>
+
+        <a href="pastyear.html" class="card">
+            <img src="question-icon.jpg" alt="Question Icon">
+            <h2>Past Year Question</h2>
+            <p>Practice with past year questions for better preparation.</p>
+        </a>
+
+        <a href="games.html" class="card">
+            <img src="games-icon.png" alt="Games Icon">
+            <h2>Games</h2>
+            <p>Learn through fun and educational games.</p>
+        </a>
+
+    </div>
+</body>
+</html>
