@@ -87,3 +87,13 @@ button:hover {
 #score {
     margin-top: 15px; /* Increased margin for better separation */
 }
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
