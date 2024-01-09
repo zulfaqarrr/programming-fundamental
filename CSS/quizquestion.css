@@ -12,12 +12,12 @@ header {
     text-align: center;
 }
 
-nav {
-    background-color: #004080; /* Slightly darker blue navigation bar */
-    padding: 10px;
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+ nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
 nav a {
     color: #fff;
