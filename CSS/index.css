@@ -74,6 +74,16 @@ body {
             padding: 20px;
         }
 
+       .container iframe {
+            margin-bottom: 20px;
+        }
+
+       @media only screen and (max-width: 600px) {
+       .container iframe {
+        margin-bottom: 10px; /* Adjust the value as needed for mobile view */
+       }
+       }
+
         .card {
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
