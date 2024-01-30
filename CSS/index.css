@@ -27,6 +27,9 @@ body {
         }
 
         nav {
+            display: flex;
+            justify-content: space-around;
+            /*align-items: center;*/
             background-color: #555;
             padding: 10px;
             text-align: left;
