@@ -81,7 +81,7 @@ body {
 
        @media only screen and (max-width: 600px) {
        .container iframe {
-        margin-bottom: 100px; /* Adjust the value as needed for mobile view */
+        margin-bottom: 20px; /* Adjust the value as needed for mobile view */
        }
        }
 
